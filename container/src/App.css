@@ -1,0 +1,13 @@
+.container-app{
+  display: flex;
+}
+.sidebar{
+  height: 100vh;
+  padding: 0 2rem;
+  margin-right: 1rem;
+  min-width: 350px;
+  border: 1px solid black;
+}
+.sidebar ul>li{
+  cursor: pointer;
+}
