@@ -5,10 +5,10 @@ const path = require('path');
 module.exports = {
   mode: "development",
   output: {
-    publicPath: "http://127.0.0.1:3001/"
+    publicPath: "http://127.0.0.1:7001/"
   },
   devServer: {
-    port: 3001
+    port: 7001
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
@@ -37,7 +37,7 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      name: "individual_limit",
+      name: "li",
       filename: "remoteEntry.js",
       exposes: {
         './App': "./src/App"
